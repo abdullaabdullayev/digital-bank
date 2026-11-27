@@ -1,0 +1,16 @@
+plugins {
+    id 'java-library'
+}
+
+description = 'Shared building blocks: money type and RFC 7807 error handling'
+
+dependencies {
+    api 'org.springframework:spring-webmvc'
+    api 'jakarta.validation:jakarta.validation-api'
+    implementation 'org.springframework.boot:spring-boot-autoconfigure'
+    implementation 'org.slf4j:slf4j-api'
+    compileOnly 'jakarta.servlet:jakarta.servlet-api'
+
+    testImplementation 'org.springframework.boot:spring-boot-starter-web'
+    testImplementation 'org.springframework.boot:spring-boot-starter-validation'
+}
